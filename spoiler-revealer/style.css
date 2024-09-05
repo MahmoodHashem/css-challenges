@@ -1,0 +1,22 @@
+
+
+p {
+  line-height: 1.5em;
+} 
+
+
+.post{
+  background-color: #E3E4E9;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 12px;
+}
+
+.spoiler{
+  background-color: black;
+  transition: 0.2s;
+}
+
+.spoiler:hover{
+  background-color: transparent;
+}
