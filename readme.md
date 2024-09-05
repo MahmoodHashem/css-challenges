@@ -4,4 +4,5 @@ This repository contains my solutions to the [CSS Challenges on Scrimba](https:/
 
 Challenges: 
 
-1. Spoiler Revealer
+1. [Spoiler Revealer](https://github.com/MahmoodHashem/css-challenges/tree/main/spoiler-revealer)
+2. [Colorful Button]( https://github.com/MahmoodHashem/css-challenges/main/colorful-btn)
