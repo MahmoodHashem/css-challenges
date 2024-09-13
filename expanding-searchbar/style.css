@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --search-border: #bbb;
+    --search-focus-border: #3a71ca;
+}
+
+.container{
+    padding: 40px;
+    
+}
+
+input{
+    width: 30%;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray
+}
+
+
+input:focus{
+    width: 100%;
+}
+
+input:focus::placeholder{
+    opacity: 0; 
+}
+
+
+
+
