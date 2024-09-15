@@ -1,0 +1,37 @@
+:root {
+    --color-light: lightgray;
+    --color-dark: darkgray;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    gap: 1em;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-light);   
+    border-radius: 100%;
+    animation: load 1s infinite alternate;
+}
+
+@keyframes load{
+    to{
+        color: var(--color-dark); 
+        scale: 1.1; 
+    }
+}
+
+
+
+
+
