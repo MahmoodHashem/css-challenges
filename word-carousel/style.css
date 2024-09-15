@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+
+h1::after{
+    content: "Coding";
+    background-color: #5134ff;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    animation: carousel 3s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes carousel{
+    0%{
+        content: "Coding";
+    }
+    
+    25%{
+        content: "Exercising";
+    }
+    50%{
+        content: "Outgoing";
+    }
+    
+    75%{
+        content: "Movies";
+    }
+    
+    100%{
+        content: "Swimming";
+    }
+}
