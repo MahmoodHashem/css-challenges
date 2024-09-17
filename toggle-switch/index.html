@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Toggle Switch</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="light-mode">
+        <div class="toggle-wrap">
+            <label for="toggle">
+                <input type="checkbox" id="toggle" class="toggle-input"></input>
+                <div class="toggle-switch"></div>
+            </label>
+        </div>
+    </body>
+    <script>
+        const body = document.querySelector('body'); 
+        const toggle = document.querySelector('#toggle'); 
+
+        toggle.addEventListener('click', ()=>{
+            console.log(toggle.checked)
+            if(toggle.checked){
+                body.classList.remove('light-mode'); 
+                body.classList.add('dark-mode'); 
+            }else{
+                body.classList.remove('dark-mode'); 
+                body.classList.add('light-mode');
+            }
+
+        })
+        
+    </script>
+</html>

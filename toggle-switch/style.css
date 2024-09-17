@@ -1,0 +1,60 @@
+
+
+
+:root .light-mode {
+    --toggle-switch-bg: #232428;
+    --toggle-border: #232428;
+    --toggle-bg: #fff;
+    --circle-size: 20px;
+    --toggle-width: 50px;
+    --bg-clr: #ced0e2; 
+}
+
+:root .dark-mode{
+    --toggle-switch-bg: white;
+    --toggle-border: white;
+    --toggle-bg: black;
+    --circle-size: 20px;
+    --toggle-width: 50px;
+    --bg-clr: rgb(34, 32, 32); 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-clr);
+    transition: all 0.5s;
+}
+
+.toggle-wrap {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-input {
+    display: none;
+}
+
+label {
+    width: var(--toggle-width);
+    height: var(--circle-size);
+    border: 3px solid var(--toggle-border);
+    border-radius: 40px;
+    padding: .25em;
+    background: var(--toggle-bg);
+    transition: all 0.5s;
+}
+
+.toggle-switch {
+    height: var(--circle-size);
+    width: var(--circle-size);
+    background: var(--toggle-switch-bg);
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.toggle-input:checked ~ .toggle-switch {
+    transform: translateX(calc(var(--toggle-width) - var(--circle-size)));
+}
