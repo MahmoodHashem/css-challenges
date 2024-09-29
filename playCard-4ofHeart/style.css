@@ -7,6 +7,11 @@ html, body {
     --card-height: 300px;
 }
 
+body{
+    height: 100vh;
+    align-content: center;
+}
+
 
 .card{
     height: var(--card-height);

@@ -10,6 +10,11 @@ html, body {
     --flag-height: 200px;
 }
 
+body{
+    height: 100vh;
+    align-content: center;
+}
+
 
 .flag{
     height: var(--flag-height);
